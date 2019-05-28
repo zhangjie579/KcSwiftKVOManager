@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zhangjie/KcSwiftKVOManager'
+  s.homepage         = 'https://github.com/zhangjie579/KcSwiftKVOManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zhangjie' => '527512749@qq.com' }
-  s.source           = { :git => 'https://github.com/zhangjie/KcSwiftKVOManager.git', :tag => s.version.to_s }
+  s.author           = { 'zhangjie579' => '527512749@qq.com' }
+  s.source           = { :git => 'https://github.com/zhangjie579/KcSwiftKVOManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
