@@ -22,20 +22,22 @@ pod 'KcSwiftKVOManager'
 
 ## Sample Code
 
-```
+```swift
 class Test1: UIView {
-var i1: String = "10" // 16  480
-var i2: String = "11" // 16  496
-var i3: Int? = 1      // 16  512
-var i4: Int? = 2      // 9   521  528
-var i5: Int8 = 1      // 9   537
+    var i1: String = "10" // 16  480
+    var i2: String = "11" // 16  496
+    var i3: Int? = 1      // 16  512
+    var i4: Int? = 2      // 9   521  528
+    var i5: Int8 = 1      // 9   537
 }
 
 let test = Test1()
 let kvo = KcSwiftKVOManager.objc(test)
 kvo.setValue(value: "i1", forKeyPath: "i1")
 kvo.setValue(value: 100, forKeyPath: "tag")
+```
 
+```swift
 let viewController = UIViewController()
 let kvo = KcSwiftKVOManager.objc(viewController)
 kvo.setValue(value: UIColor.lightGray, forKeyPath: "view.backgroundColor")
