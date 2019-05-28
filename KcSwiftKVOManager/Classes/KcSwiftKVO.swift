@@ -130,15 +130,13 @@ private extension KcSwiftKVOManager {
                 }
             }
             else {
-                // 5.是否为NSObject子类
-                let instanceIsNsObject = Mirror.kc_isNSObjectSubClass(value: content)
-                // 6.dict中包含父类NSObject的属性列表, Set
-                let bridgedPropertyList = Mirror.bridgedPropertyList(value: content)
+//                // 5.是否为NSObject子类
+//                let instanceIsNsObject = Mirror.kc_isNSObjectSubClass(value: content)
+//                // 6.dict中包含父类NSObject的属性列表, Set
+//                let bridgedPropertyList = Mirror.bridgedPropertyList(value: content)
                 let key = keyPath.lazy.split(separator: ".")[index...].joined(separator: ".")
-                // 7.系统定义的NSObject子类是否有这个属性
-                if instanceIsNsObject,
-                    let objc = content as? NSObject,
-                    isContain(set: bridgedPropertyList, key: String(key)) {
+                // 7.系统定义的NSObject子类是否有这个属性(由于是用keyPath不好验证)
+                if let objc = content as? NSObject {
                     objcClosure(objc, String(key))
                 }
                 else {
