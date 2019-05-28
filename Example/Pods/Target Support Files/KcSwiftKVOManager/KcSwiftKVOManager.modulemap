@@ -1,0 +1,6 @@
+framework module KcSwiftKVOManager {
+  umbrella header "KcSwiftKVOManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

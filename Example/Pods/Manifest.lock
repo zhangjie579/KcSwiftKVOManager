@@ -1,0 +1,16 @@
+PODS:
+  - KcSwiftKVOManager (0.1.0)
+
+DEPENDENCIES:
+  - KcSwiftKVOManager (from `../`)
+
+EXTERNAL SOURCES:
+  KcSwiftKVOManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KcSwiftKVOManager: 2f7c99426c10a38d5fec5129e27949127ffc813d
+
+PODFILE CHECKSUM: f5565b319107c674b7a6b5477600b0caa54607cd
+
+COCOAPODS: 1.6.1

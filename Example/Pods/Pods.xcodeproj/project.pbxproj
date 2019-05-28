@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0549FE51FB85530742C989D586EF0EA7 /* Pods-KcSwiftKVOManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1FB482CF5A2C28612996745E7AC750 /* Pods-KcSwiftKVOManager_Example-dummy.m */; };
+		2F73D418229D48A10084D4AB /* KcSwiftKVOHandelAbnormalDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D40D229D48A10084D4AB /* KcSwiftKVOHandelAbnormalDefault.swift */; };
+		2F73D419229D48A10084D4AB /* KcSwiftKVOAnyExtensionProtocl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D40E229D48A10084D4AB /* KcSwiftKVOAnyExtensionProtocl.swift */; };
+		2F73D41A229D48A10084D4AB /* KcSwiftKVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D40F229D48A10084D4AB /* KcSwiftKVO.swift */; };
+		2F73D41B229D48A10084D4AB /* Other-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D410229D48A10084D4AB /* Other-extension.swift */; };
+		2F73D41C229D48A10084D4AB /* MemoryLayout-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D411229D48A10084D4AB /* MemoryLayout-extension.swift */; };
+		2F73D41D229D48A10084D4AB /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D413229D48A10084D4AB /* Metadata.swift */; };
+		2F73D41E229D48A10084D4AB /* KcPointerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D414229D48A10084D4AB /* KcPointerType.swift */; };
+		2F73D41F229D48A10084D4AB /* KcClassInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D415229D48A10084D4AB /* KcClassInfo.swift */; };
+		2F73D420229D48A10084D4AB /* ContextDescriptorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D416229D48A10084D4AB /* ContextDescriptorProtocol.swift */; };
+		2F73D421229D48A10084D4AB /* Mirror-analyz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73D417229D48A10084D4AB /* Mirror-analyz.swift */; };
+		64FC26A35F0F9D76FA367B3733F09BEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		6C0BA5C01AC1244390DF437247B394ED /* Pods-KcSwiftKVOManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8382FAC7973949DF675858304824CB88 /* Pods-KcSwiftKVOManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		877E2F41400879D5EC663630FBF3BA36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		8BAE18B0FD400F9D0D411AF3D64F5FE1 /* KcSwiftKVOManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADEE984F6117262DCBF2B172B72C02F4 /* KcSwiftKVOManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1F78A98E937575F21F03E46D5D13027 /* KcSwiftKVOManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC41C16B5B9BE16375632E8A68C98F9 /* KcSwiftKVOManager-dummy.m */; };
+		CE68ED8DF35F9C36B30A64C76137D17B /* Pods-KcSwiftKVOManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F93E90B03C02CC03467ED862F3243BC /* Pods-KcSwiftKVOManager_Tests-dummy.m */; };
+		E6FB2DD0C00790CC4378B7C7193A6227 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		F7E94A5DAFFA00FC86945C60276C6D24 /* Pods-KcSwiftKVOManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 788C2AD8C8F63458CD0A4C93E340ED1D /* Pods-KcSwiftKVOManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FF317BA8712C37AD95D028338F6B408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 561CC9409868076D41A38ACD5AFE6A84;
+			remoteInfo = KcSwiftKVOManager;
+		};
+		AD6946F8B66762DF991BC9BE56405C22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10EE42C3C27FCCDC3F6328580C8E8E8B;
+			remoteInfo = "Pods-KcSwiftKVOManager_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C17A088549EDFF6EB1D918749D9081B /* Pods-KcSwiftKVOManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KcSwiftKVOManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		15C191B61D2A4D753C884FF894E15601 /* Pods-KcSwiftKVOManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KcSwiftKVOManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16FF8DF99D1A51C89C88B506F6502CCC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1B04E8BF47E4A0363DB099B90AEF3375 /* KcSwiftKVOManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KcSwiftKVOManager-Info.plist"; sourceTree = "<group>"; };
+		296C8C5E7D3815A23C20FAF1B43F7489 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2E16BB4E7C42D1254229D2B73BACA3A4 /* KcSwiftKVOManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KcSwiftKVOManager.xcconfig; sourceTree = "<group>"; };
+		2F73D40D229D48A10084D4AB /* KcSwiftKVOHandelAbnormalDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KcSwiftKVOHandelAbnormalDefault.swift; path = KcSwiftKVOManager/Classes/KcSwiftKVOHandelAbnormalDefault.swift; sourceTree = "<group>"; };
+		2F73D40E229D48A10084D4AB /* KcSwiftKVOAnyExtensionProtocl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KcSwiftKVOAnyExtensionProtocl.swift; path = KcSwiftKVOManager/Classes/KcSwiftKVOAnyExtensionProtocl.swift; sourceTree = "<group>"; };
+		2F73D40F229D48A10084D4AB /* KcSwiftKVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KcSwiftKVO.swift; path = KcSwiftKVOManager/Classes/KcSwiftKVO.swift; sourceTree = "<group>"; };
+		2F73D410229D48A10084D4AB /* Other-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Other-extension.swift"; path = "KcSwiftKVOManager/Classes/Other-extension.swift"; sourceTree = "<group>"; };
+		2F73D411229D48A10084D4AB /* MemoryLayout-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MemoryLayout-extension.swift"; path = "KcSwiftKVOManager/Classes/MemoryLayout-extension.swift"; sourceTree = "<group>"; };
+		2F73D413229D48A10084D4AB /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		2F73D414229D48A10084D4AB /* KcPointerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcPointerType.swift; sourceTree = "<group>"; };
+		2F73D415229D48A10084D4AB /* KcClassInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcClassInfo.swift; sourceTree = "<group>"; };
+		2F73D416229D48A10084D4AB /* ContextDescriptorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextDescriptorProtocol.swift; sourceTree = "<group>"; };
+		2F73D417229D48A10084D4AB /* Mirror-analyz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Mirror-analyz.swift"; path = "KcSwiftKVOManager/Classes/Mirror-analyz.swift"; sourceTree = "<group>"; };
+		2F93E90B03C02CC03467ED862F3243BC /* Pods-KcSwiftKVOManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KcSwiftKVOManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		3D4C9E8F2DCC2E4F02CC71C27100882A /* Pods-KcSwiftKVOManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KcSwiftKVOManager_Example.modulemap"; sourceTree = "<group>"; };
+		4D84A650301584EF07F9CA11FD2C28CA /* KcSwiftKVOManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KcSwiftKVOManager.modulemap; sourceTree = "<group>"; };
+		589B24BD79004F274C53A40BE8C648F5 /* Pods-KcSwiftKVOManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KcSwiftKVOManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6119F6569749E92EE8763EFD80E4F37E /* Pods-KcSwiftKVOManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KcSwiftKVOManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		788C2AD8C8F63458CD0A4C93E340ED1D /* Pods-KcSwiftKVOManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KcSwiftKVOManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		790E97E6AD239AEB553B3EC0E55A902D /* KcSwiftKVOManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KcSwiftKVOManager-prefix.pch"; sourceTree = "<group>"; };
+		8382FAC7973949DF675858304824CB88 /* Pods-KcSwiftKVOManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KcSwiftKVOManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		92C5DEFD9B9E44894895A49E6966E1D0 /* Pods-KcSwiftKVOManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KcSwiftKVOManager_Tests-Info.plist"; sourceTree = "<group>"; };
+		9AC41C16B5B9BE16375632E8A68C98F9 /* KcSwiftKVOManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KcSwiftKVOManager-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7825520400EDEDFB430E132407DC433 /* KcSwiftKVOManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KcSwiftKVOManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEE984F6117262DCBF2B172B72C02F4 /* KcSwiftKVOManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KcSwiftKVOManager-umbrella.h"; sourceTree = "<group>"; };
+		AE1FB482CF5A2C28612996745E7AC750 /* Pods-KcSwiftKVOManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KcSwiftKVOManager_Example-dummy.m"; sourceTree = "<group>"; };
+		B55778B2510DDA70A1A0A8DE7EECA6FC /* Pods-KcSwiftKVOManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KcSwiftKVOManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF13D609ACFE5998E99FCC5486816105 /* Pods-KcSwiftKVOManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KcSwiftKVOManager_Tests.modulemap"; sourceTree = "<group>"; };
+		C695F1E1D2486627C8D4825D8865D1E0 /* Pods_KcSwiftKVOManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KcSwiftKVOManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB047D17C497A4ABD89604157C3F040B /* KcSwiftKVOManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KcSwiftKVOManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF7C2D505CA076878C9C5AA5DCA06B58 /* Pods-KcSwiftKVOManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KcSwiftKVOManager_Example-Info.plist"; sourceTree = "<group>"; };
+		DD54AD7639019FE382647A532A34A6A0 /* Pods-KcSwiftKVOManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KcSwiftKVOManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E07C3C7C50B32ADE49373CC05DD43649 /* Pods-KcSwiftKVOManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KcSwiftKVOManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EDE97E0340A63C55739B134A01901D7D /* Pods-KcSwiftKVOManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KcSwiftKVOManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F63D9C5A8FB26E0E71DDA41385D42F62 /* Pods-KcSwiftKVOManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KcSwiftKVOManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FF077BAFBFDA4A38BA4BE70524226E36 /* Pods_KcSwiftKVOManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KcSwiftKVOManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		114AC1618A76DD20D97F5C455333BBA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FB2DD0C00790CC4378B7C7193A6227 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B050756633C2ACE85C6473E4B08244FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877E2F41400879D5EC663630FBF3BA36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5272F600D856A46CB34D10107E20E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FC26A35F0F9D76FA367B3733F09BEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A936BF3FAEACC7F76B7C95EAC2AF4D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7825520400EDEDFB430E132407DC433 /* KcSwiftKVOManager.framework */,
+				FF077BAFBFDA4A38BA4BE70524226E36 /* Pods_KcSwiftKVOManager_Example.framework */,
+				C695F1E1D2486627C8D4825D8865D1E0 /* Pods_KcSwiftKVOManager_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F73D412229D48A10084D4AB /* classInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2F73D413229D48A10084D4AB /* Metadata.swift */,
+				2F73D414229D48A10084D4AB /* KcPointerType.swift */,
+				2F73D415229D48A10084D4AB /* KcClassInfo.swift */,
+				2F73D416229D48A10084D4AB /* ContextDescriptorProtocol.swift */,
+			);
+			name = classInfo;
+			path = KcSwiftKVOManager/Classes/classInfo;
+			sourceTree = "<group>";
+		};
+		3D5753965370812B5B8CB11D49D858DF /* Pods-KcSwiftKVOManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3D4C9E8F2DCC2E4F02CC71C27100882A /* Pods-KcSwiftKVOManager_Example.modulemap */,
+				6119F6569749E92EE8763EFD80E4F37E /* Pods-KcSwiftKVOManager_Example-acknowledgements.markdown */,
+				B55778B2510DDA70A1A0A8DE7EECA6FC /* Pods-KcSwiftKVOManager_Example-acknowledgements.plist */,
+				AE1FB482CF5A2C28612996745E7AC750 /* Pods-KcSwiftKVOManager_Example-dummy.m */,
+				589B24BD79004F274C53A40BE8C648F5 /* Pods-KcSwiftKVOManager_Example-frameworks.sh */,
+				CF7C2D505CA076878C9C5AA5DCA06B58 /* Pods-KcSwiftKVOManager_Example-Info.plist */,
+				788C2AD8C8F63458CD0A4C93E340ED1D /* Pods-KcSwiftKVOManager_Example-umbrella.h */,
+				F63D9C5A8FB26E0E71DDA41385D42F62 /* Pods-KcSwiftKVOManager_Example.debug.xcconfig */,
+				0C17A088549EDFF6EB1D918749D9081B /* Pods-KcSwiftKVOManager_Example.release.xcconfig */,
+			);
+			name = "Pods-KcSwiftKVOManager_Example";
+			path = "Target Support Files/Pods-KcSwiftKVOManager_Example";
+			sourceTree = "<group>";
+		};
+		464DEF59F73BD246453F04F5B7E2B16A /* KcSwiftKVOManager */ = {
+			isa = PBXGroup;
+			children = (
+				2F73D412229D48A10084D4AB /* classInfo */,
+				2F73D40F229D48A10084D4AB /* KcSwiftKVO.swift */,
+				2F73D40E229D48A10084D4AB /* KcSwiftKVOAnyExtensionProtocl.swift */,
+				2F73D40D229D48A10084D4AB /* KcSwiftKVOHandelAbnormalDefault.swift */,
+				2F73D411229D48A10084D4AB /* MemoryLayout-extension.swift */,
+				2F73D417229D48A10084D4AB /* Mirror-analyz.swift */,
+				2F73D410229D48A10084D4AB /* Other-extension.swift */,
+				50CF841E47C334FBC380058D598D5E17 /* Pod */,
+				86FAB59A94EF884E466FFA4440493A0B /* Support Files */,
+			);
+			name = KcSwiftKVOManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		50CF841E47C334FBC380058D598D5E17 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CB047D17C497A4ABD89604157C3F040B /* KcSwiftKVOManager.podspec */,
+				16FF8DF99D1A51C89C88B506F6502CCC /* LICENSE */,
+				296C8C5E7D3815A23C20FAF1B43F7489 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		75B1BC08E21A99853B01AEB4B9AF1D72 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D5753965370812B5B8CB11D49D858DF /* Pods-KcSwiftKVOManager_Example */,
+				E267FC38090CCC82C8CF2BE4AE9E89B9 /* Pods-KcSwiftKVOManager_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		86FAB59A94EF884E466FFA4440493A0B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D84A650301584EF07F9CA11FD2C28CA /* KcSwiftKVOManager.modulemap */,
+				2E16BB4E7C42D1254229D2B73BACA3A4 /* KcSwiftKVOManager.xcconfig */,
+				9AC41C16B5B9BE16375632E8A68C98F9 /* KcSwiftKVOManager-dummy.m */,
+				1B04E8BF47E4A0363DB099B90AEF3375 /* KcSwiftKVOManager-Info.plist */,
+				790E97E6AD239AEB553B3EC0E55A902D /* KcSwiftKVOManager-prefix.pch */,
+				ADEE984F6117262DCBF2B172B72C02F4 /* KcSwiftKVOManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KcSwiftKVOManager";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F651EE732BE638CB5FC03C7388085B43 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1A936BF3FAEACC7F76B7C95EAC2AF4D5 /* Products */,
+				75B1BC08E21A99853B01AEB4B9AF1D72 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E267FC38090CCC82C8CF2BE4AE9E89B9 /* Pods-KcSwiftKVOManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BF13D609ACFE5998E99FCC5486816105 /* Pods-KcSwiftKVOManager_Tests.modulemap */,
+				15C191B61D2A4D753C884FF894E15601 /* Pods-KcSwiftKVOManager_Tests-acknowledgements.markdown */,
+				E07C3C7C50B32ADE49373CC05DD43649 /* Pods-KcSwiftKVOManager_Tests-acknowledgements.plist */,
+				2F93E90B03C02CC03467ED862F3243BC /* Pods-KcSwiftKVOManager_Tests-dummy.m */,
+				92C5DEFD9B9E44894895A49E6966E1D0 /* Pods-KcSwiftKVOManager_Tests-Info.plist */,
+				8382FAC7973949DF675858304824CB88 /* Pods-KcSwiftKVOManager_Tests-umbrella.h */,
+				DD54AD7639019FE382647A532A34A6A0 /* Pods-KcSwiftKVOManager_Tests.debug.xcconfig */,
+				EDE97E0340A63C55739B134A01901D7D /* Pods-KcSwiftKVOManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-KcSwiftKVOManager_Tests";
+			path = "Target Support Files/Pods-KcSwiftKVOManager_Tests";
+			sourceTree = "<group>";
+		};
+		F651EE732BE638CB5FC03C7388085B43 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				464DEF59F73BD246453F04F5B7E2B16A /* KcSwiftKVOManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		47534D78685FF4F71DB5B255372BEE28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0BA5C01AC1244390DF437247B394ED /* Pods-KcSwiftKVOManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2A56B526859FE08539D6FEBC1C1F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E94A5DAFFA00FC86945C60276C6D24 /* Pods-KcSwiftKVOManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC3873E5A2DA4AEB61D1B2F53CB9D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAE18B0FD400F9D0D411AF3D64F5FE1 /* KcSwiftKVOManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10EE42C3C27FCCDC3F6328580C8E8E8B /* Pods-KcSwiftKVOManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64606E0BDD0DF78954AA34C2530A11AF /* Build configuration list for PBXNativeTarget "Pods-KcSwiftKVOManager_Example" */;
+			buildPhases = (
+				9CF2A56B526859FE08539D6FEBC1C1F1 /* Headers */,
+				21DF23B533963338266195E32B04BF18 /* Sources */,
+				D5272F600D856A46CB34D10107E20E72 /* Frameworks */,
+				F1F7A6887905918B77C25DE85B4FDA17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A93A8C66C83A2C390543981A945DDB8 /* PBXTargetDependency */,
+			);
+			name = "Pods-KcSwiftKVOManager_Example";
+			productName = "Pods-KcSwiftKVOManager_Example";
+			productReference = FF077BAFBFDA4A38BA4BE70524226E36 /* Pods_KcSwiftKVOManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		44930860772D0B38C5D45470BACA6D26 /* Pods-KcSwiftKVOManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82B5779544C04399D1BD4A1C3A42E7A8 /* Build configuration list for PBXNativeTarget "Pods-KcSwiftKVOManager_Tests" */;
+			buildPhases = (
+				47534D78685FF4F71DB5B255372BEE28 /* Headers */,
+				1584C49D88481A3E18F3543012E3DED4 /* Sources */,
+				B050756633C2ACE85C6473E4B08244FE /* Frameworks */,
+				DD5C89E45BA983C28F57FF5863295B65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22CD96FEB94A379174D49880F02A4161 /* PBXTargetDependency */,
+			);
+			name = "Pods-KcSwiftKVOManager_Tests";
+			productName = "Pods-KcSwiftKVOManager_Tests";
+			productReference = C695F1E1D2486627C8D4825D8865D1E0 /* Pods_KcSwiftKVOManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		561CC9409868076D41A38ACD5AFE6A84 /* KcSwiftKVOManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061C4B8AF7765CA8BA425B064BCD15F7 /* Build configuration list for PBXNativeTarget "KcSwiftKVOManager" */;
+			buildPhases = (
+				BEBC3873E5A2DA4AEB61D1B2F53CB9D1 /* Headers */,
+				A2D1D2CC09129E25386AC33ED3EDA2E2 /* Sources */,
+				114AC1618A76DD20D97F5C455333BBA4 /* Frameworks */,
+				DD13B593BFCBFF16FCDAC1F1AAF2D40B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KcSwiftKVOManager;
+			productName = KcSwiftKVOManager;
+			productReference = A7825520400EDEDFB430E132407DC433 /* KcSwiftKVOManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					561CC9409868076D41A38ACD5AFE6A84 = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1A936BF3FAEACC7F76B7C95EAC2AF4D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				561CC9409868076D41A38ACD5AFE6A84 /* KcSwiftKVOManager */,
+				10EE42C3C27FCCDC3F6328580C8E8E8B /* Pods-KcSwiftKVOManager_Example */,
+				44930860772D0B38C5D45470BACA6D26 /* Pods-KcSwiftKVOManager_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD13B593BFCBFF16FCDAC1F1AAF2D40B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C89E45BA983C28F57FF5863295B65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F7A6887905918B77C25DE85B4FDA17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1584C49D88481A3E18F3543012E3DED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE68ED8DF35F9C36B30A64C76137D17B /* Pods-KcSwiftKVOManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21DF23B533963338266195E32B04BF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0549FE51FB85530742C989D586EF0EA7 /* Pods-KcSwiftKVOManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D1D2CC09129E25386AC33ED3EDA2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F73D41D229D48A10084D4AB /* Metadata.swift in Sources */,
+				2F73D419229D48A10084D4AB /* KcSwiftKVOAnyExtensionProtocl.swift in Sources */,
+				2F73D418229D48A10084D4AB /* KcSwiftKVOHandelAbnormalDefault.swift in Sources */,
+				2F73D41C229D48A10084D4AB /* MemoryLayout-extension.swift in Sources */,
+				2F73D420229D48A10084D4AB /* ContextDescriptorProtocol.swift in Sources */,
+				2F73D41A229D48A10084D4AB /* KcSwiftKVO.swift in Sources */,
+				B1F78A98E937575F21F03E46D5D13027 /* KcSwiftKVOManager-dummy.m in Sources */,
+				2F73D421229D48A10084D4AB /* Mirror-analyz.swift in Sources */,
+				2F73D41B229D48A10084D4AB /* Other-extension.swift in Sources */,
+				2F73D41F229D48A10084D4AB /* KcClassInfo.swift in Sources */,
+				2F73D41E229D48A10084D4AB /* KcPointerType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22CD96FEB94A379174D49880F02A4161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KcSwiftKVOManager_Example";
+			target = 10EE42C3C27FCCDC3F6328580C8E8E8B /* Pods-KcSwiftKVOManager_Example */;
+			targetProxy = AD6946F8B66762DF991BC9BE56405C22 /* PBXContainerItemProxy */;
+		};
+		4A93A8C66C83A2C390543981A945DDB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KcSwiftKVOManager;
+			target = 561CC9409868076D41A38ACD5AFE6A84 /* KcSwiftKVOManager */;
+			targetProxy = 7FF317BA8712C37AD95D028338F6B408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08152B839645630D457B9A0BB64883A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE97E0340A63C55739B134A01901D7D /* Pods-KcSwiftKVOManager_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KcSwiftKVOManager_Tests/Pods-KcSwiftKVOManager_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KcSwiftKVOManager_Tests/Pods-KcSwiftKVOManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11E82EE86D9877C7E65CC58591A0343F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E16BB4E7C42D1254229D2B73BACA3A4 /* KcSwiftKVOManager.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KcSwiftKVOManager/KcSwiftKVOManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KcSwiftKVOManager/KcSwiftKVOManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KcSwiftKVOManager/KcSwiftKVOManager.modulemap";
+				PRODUCT_MODULE_NAME = KcSwiftKVOManager;
+				PRODUCT_NAME = KcSwiftKVOManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		17BD7FE45CAB8F0DC849397344C1ADE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63D9C5A8FB26E0E71DDA41385D42F62 /* Pods-KcSwiftKVOManager_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KcSwiftKVOManager_Example/Pods-KcSwiftKVOManager_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KcSwiftKVOManager_Example/Pods-KcSwiftKVOManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		997D8455B953248F51F97AFD5FD48D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E16BB4E7C42D1254229D2B73BACA3A4 /* KcSwiftKVOManager.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KcSwiftKVOManager/KcSwiftKVOManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KcSwiftKVOManager/KcSwiftKVOManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KcSwiftKVOManager/KcSwiftKVOManager.modulemap";
+				PRODUCT_MODULE_NAME = KcSwiftKVOManager;
+				PRODUCT_NAME = KcSwiftKVOManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F564953EE90E230D38D2BA2279BD8886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C17A088549EDFF6EB1D918749D9081B /* Pods-KcSwiftKVOManager_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KcSwiftKVOManager_Example/Pods-KcSwiftKVOManager_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KcSwiftKVOManager_Example/Pods-KcSwiftKVOManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F56DD82D8309287BAD2B388578F47199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD54AD7639019FE382647A532A34A6A0 /* Pods-KcSwiftKVOManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KcSwiftKVOManager_Tests/Pods-KcSwiftKVOManager_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KcSwiftKVOManager_Tests/Pods-KcSwiftKVOManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		061C4B8AF7765CA8BA425B064BCD15F7 /* Build configuration list for PBXNativeTarget "KcSwiftKVOManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997D8455B953248F51F97AFD5FD48D64 /* Debug */,
+				11E82EE86D9877C7E65CC58591A0343F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64606E0BDD0DF78954AA34C2530A11AF /* Build configuration list for PBXNativeTarget "Pods-KcSwiftKVOManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BD7FE45CAB8F0DC849397344C1ADE4 /* Debug */,
+				F564953EE90E230D38D2BA2279BD8886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82B5779544C04399D1BD4A1C3A42E7A8 /* Build configuration list for PBXNativeTarget "Pods-KcSwiftKVOManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56DD82D8309287BAD2B388578F47199 /* Debug */,
+				08152B839645630D457B9A0BB64883A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
