@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		1ED24BF4BC9BDECA4901D3EB /* Pods_KcSwiftKVOManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KcSwiftKVOManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		383C656C7E3C006C92D6F482 /* Pods-KcSwiftKVOManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcSwiftKVOManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KcSwiftKVOManager_Tests/Pods-KcSwiftKVOManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		53CFBF353156E6D831D58F0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		53CFBF353156E6D831D58F0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KcSwiftKVOManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KcSwiftKVOManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		663C51015EDD7B1DA656B9F3 /* Pods-KcSwiftKVOManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcSwiftKVOManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-KcSwiftKVOManager_Tests/Pods-KcSwiftKVOManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		949522BFBF9DEFB005A47DA2 /* KcSwiftKVOManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KcSwiftKVOManager.podspec; path = ../KcSwiftKVOManager.podspec; sourceTree = "<group>"; };
+		949522BFBF9DEFB005A47DA2 /* KcSwiftKVOManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KcSwiftKVOManager.podspec; path = ../KcSwiftKVOManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BBE2F2DF17CFCAB9EE91F673 /* Pods_KcSwiftKVOManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KcSwiftKVOManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E74188BF2F21ECBE7CC353 /* Pods-KcSwiftKVOManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcSwiftKVOManager_Example.release.xcconfig"; path = "Target Support Files/Pods-KcSwiftKVOManager_Example/Pods-KcSwiftKVOManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CC291E44EDA084EA2ED08E81 /* Pods-KcSwiftKVOManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcSwiftKVOManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-KcSwiftKVOManager_Example/Pods-KcSwiftKVOManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F1A9FC28297B29D56256005E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F1A9FC28297B29D56256005E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				383C656C7E3C006C92D6F482 /* Pods-KcSwiftKVOManager_Tests.debug.xcconfig */,
 				663C51015EDD7B1DA656B9F3 /* Pods-KcSwiftKVOManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
