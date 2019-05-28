@@ -143,6 +143,7 @@ private extension KcSwiftKVOManager {
                     notFoundClosure(keyPath, String(key), content)
                     // print("keyPath: \(keyPath) \n, 找不到key: \(String(key)) \n, value: \(content)")
                 }
+                return
             }
         }
     }
