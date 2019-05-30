@@ -44,7 +44,7 @@ kvo.setValue(value: UIColor.lightGray, forKeyPath: "view.backgroundColor")
 ```
 
 ## 原理
-```
+```swift
  1.属性
      * 属性: super + self; 协议protocol自己会加进去, 不用管
  2.MemoryLayout
@@ -88,7 +88,6 @@ kvo.setValue(value: UIColor.lightGray, forKeyPath: "view.backgroundColor")
     * 这个是MemoryLayout.stride(ofValue: i3))属性实际占用的内存
 	* 注意需要直接使用属性value来计算，而不能用let a = value来计算，因为它是值类型⚠️⚠️⚠️
     	* 其实大小就是对于classType的MemoryLayout.stride，比如int，float类型…
-
 ```
 
 
