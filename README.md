@@ -44,7 +44,7 @@ kvo.setValue(value: UIColor.lightGray, forKeyPath: "view.backgroundColor")
 ```
 
 ## 原理
-```swift
+```javascript
  1.属性
      * 属性: super + self; 协议protocol自己会加进去, 不用管
  2.MemoryLayout
