@@ -46,9 +46,9 @@ kvo.setValue(value: UIColor.lightGray, forKeyPath: "view.backgroundColor")
 ## 原理
 ```swift
 1.属性
- > - 属性: super + self; 协议protocol自己会加进去, 不用管
+ >- 属性: super + self; 协议protocol自己会加进去, 不用管
 2.MemoryLayout
- > - size: 对象的占用空间
+ >- size: 对象的占用空间
  > - stride: 实际长度
  > -- 在一个 T 类型的数组中，其中任意一个元素从开始地址到结束地址所占用的连续内存字节的大小就是 stride
  > -- stride - size 个字节则为每个元素因为内存对齐而浪费的内存空间
