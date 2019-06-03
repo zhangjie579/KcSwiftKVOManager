@@ -17,7 +17,7 @@ KcSwiftKVOManager is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'KcSwiftKVOManager', '0.0.1'
+pod 'KcSwiftKVOManager', '0.0.2'
 ```
 
 ## Sample Code
