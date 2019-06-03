@@ -179,7 +179,7 @@ public extension Mirror {
         if Mirror.kc_isClass(type: subjectType) {
             instanceStartOffset = Mirror.is64BitPlatform ? 16 : 12
         }
-        return _kc_classPropertyList(instanceStartOffset: &instanceStartOffset, valueKeyPath: valueKeyPath)
+        return pr_kc_classPropertyList(instanceStartOffset: &instanceStartOffset, valueKeyPath: valueKeyPath)
     }
     
     /// 处理superclassMirror
@@ -223,7 +223,7 @@ public extension Mirror {
                                     enableHandleObjcSystemClass: Bool = false,
                                     isHandleSuperClass: Bool = false) -> [KcHandleContent] {
         let mirror = mirror_filterOptionalReflectValue
-        return mirror._kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: isHandleSuperClass, contentMirror: mirror)
+        return mirror.pr_kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: isHandleSuperClass, contentMirror: mirror)
     }
 }
 
@@ -247,8 +247,7 @@ private extension Mirror {
             }
                 // 属性是元祖tuple
             else if content.mirror.mirror_filterOptionalReflectValue.displayStyle == .tuple {
-//                let tuplePropertyList = kc_classPropertyList(throughtType: .mirror, contentValue: content.value)
-                if let tupleContentProperty = propertyList.first(where: { $0.keyPath == content.keyPath }) {
+                if propertyList.first(where: { $0.keyPath == content.keyPath }) != nil {
                     let tuplePropertyList = kc_classPropertyListThroughMirror(reflecting: content.value, valueKeyPath: content.keyPath)
                         // .map { Property.Description(keyPath: $0.keyPath, type: $0.type, offset: $0.offset + tupleContentProperty.offset) }
                     // 要把tuple的整体content删掉
@@ -271,7 +270,7 @@ private extension Mirror {
         return mirror.kc_classPropertyList(valueKeyPath: valueKeyPath)
     }
     
-    func _kc_classPropertyList(instanceStartOffset : inout Int, valueKeyPath: String) -> [Property.Description] {
+    func pr_kc_classPropertyList(instanceStartOffset : inout Int, valueKeyPath: String) -> [Property.Description] {
         /// 求value的内存size, 并把currentOffset对齐
         ///
         /// - Parameters:
@@ -296,7 +295,7 @@ private extension Mirror {
         superclassMirrorHandle(handleSystemObjcClass: { (superMirror, anyClass) in
             instanceStartOffset = class_getInstanceSize(anyClass)
         }) { (superclassMirror, type) in
-            let superProperties = superclassMirror._kc_classPropertyList(instanceStartOffset: &instanceStartOffset, valueKeyPath: valueKeyPath)
+            let superProperties = superclassMirror.pr_kc_classPropertyList(instanceStartOffset: &instanceStartOffset, valueKeyPath: valueKeyPath)
             if !superProperties.isEmpty {
                 propertyList.append(contentsOf: superProperties)
             }
@@ -329,7 +328,7 @@ private extension Mirror {
     }
     
     /// 遍历property (有属性返回true), isAlreadyAddPropertyInValue这个对象没有属性
-    private func _kc_classPropertyListHandle(startKey: String = "",
+    private func pr_kc_classPropertyListHandle(startKey: String = "",
                                              enableHandleObjcSystemClass: Bool = false,
                                              isHandleSuperClass: Bool = false,
                                              contentMirror: Mirror) -> [KcHandleContent] {
@@ -342,11 +341,11 @@ private extension Mirror {
         // 1.superMirror
         superclassMirrorHandle(handleSystemObjcClass: { (superclassMirror, anyClass) in
             if enableHandleObjcSystemClass {
-                let superResults = superclassMirror._kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: true, contentMirror: contentMirror)
+                let superResults = superclassMirror.pr_kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: true, contentMirror: contentMirror)
                 results.append(contentsOf: superResults)
             }
         }) { (superclassMirror, type) in
-            let superResults = superclassMirror._kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: true, contentMirror: contentMirror)
+            let superResults = superclassMirror.pr_kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: true, contentMirror: contentMirror)
             results.append(contentsOf: superResults)
         }
         
@@ -402,16 +401,16 @@ public extension Mirror {
     /// 通过class_copyPropertyList获取属性list
     static func bridgedPropertyList(value: Any) -> Set<String> {
         if let anyClass = type(of: value) as? AnyClass {
-            return _bridgedPropertyList(anyClass: anyClass)
+            return pr_bridgedPropertyList(anyClass: anyClass)
         }
         return []
     }
     
-    private static func _bridgedPropertyList(anyClass: AnyClass) -> Set<String> {
+    private static func pr_bridgedPropertyList(anyClass: AnyClass) -> Set<String> {
         var propertyList = Set<String>()
         // 1.有super、但是super不是NSObject
         if let superClass = class_getSuperclass(anyClass), superClass != NSObject.self {
-            propertyList = propertyList.union(_bridgedPropertyList(anyClass: superClass))
+            propertyList = propertyList.union(pr_bridgedPropertyList(anyClass: superClass))
         }
         // 2.super是NSObject
         let count = UnsafeMutablePointer<UInt32>.allocate(capacity: 1)
