@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KcSwiftKVOManager/ViewController.swift"
-            timestampString = "581235900.788076"
+            timestampString = "581236081.105979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/KcSwiftKVO.swift"
-            timestampString = "581235900.788386"
+            timestampString = "581238452.830014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-            timestampString = "581235900.788951"
+            timestampString = "581238452.830832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "kc_classPropertyList(valueKeyPath:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-            timestampString = "581235900.7891541"
+            timestampString = "581238452.831089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
             landmarkName = "_kc_classPropertyList(instanceStartOffset:valueKeyPath:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-            timestampString = "581235900.789211"
+            timestampString = "581238452.831171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "superclassMirrorHandle(handleSystemObjcClass:handleSwiftClass:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-            timestampString = "581235900.7892621"
+            timestampString = "581238452.831249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
             landmarkName = "_kc_classPropertyList(instanceStartOffset:valueKeyPath:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-            timestampString = "581235900.789313"
+            timestampString = "581238452.831387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "336"
-            endingLineNumber = "336"
+            startingLineNumber = "343"
+            endingLineNumber = "343"
             landmarkName = "_kc_classPropertyListHandle(startKey:enableHandleObjcSystemClass:isHandleSuperClass:contentMirror:)"
             landmarkType = "7">
             <Locations>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-            timestampString = "581235900.7893569"
+            timestampString = "581238452.831484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "337"
-            endingLineNumber = "337"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
             landmarkName = "_kc_classPropertyListHandle(startKey:enableHandleObjcSystemClass:isHandleSuperClass:contentMirror:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-            timestampString = "581235900.789403"
+            timestampString = "581238452.831578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "342"
-            endingLineNumber = "342"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
             landmarkName = "_kc_classPropertyListHandle(startKey:enableHandleObjcSystemClass:isHandleSuperClass:contentMirror:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-            timestampString = "581235900.7894469"
+            timestampString = "581238452.831652"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "kc_classPropertyListThroughClassInfo(contentValue:)"
             landmarkType = "7">
             <Locations>
@@ -202,7 +202,7 @@
                   moduleName = "KcSwiftKVOManager"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangjie/Desktop/GitHub/KcSwiftKVOManager/KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-                  timestampString = "581219228.557006"
+                  timestampString = "581236344.805436"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "239"
@@ -217,7 +217,7 @@
                   moduleName = "KcSwiftKVOManager"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangjie/Desktop/GitHub/KcSwiftKVOManager/KcSwiftKVOManager/Classes/Mirror-analyz.swift"
-                  timestampString = "581219228.559617"
+                  timestampString = "581236344.8078901"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "236"
@@ -234,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KcSwiftKVOManager/ViewController.swift"
-            timestampString = "581235900.7894911"
+            timestampString = "581236081.107882"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -246,17 +246,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KcSwiftKVOManager/TwoViewController.swift"
-            timestampString = "581235900.789534"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581238452.8317569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "test1()"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "kc_classPropertyListThroughClassInfo(contentValue:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((extension in KcSwiftKVOManager):Swift.Mirror.KcHandleContent) -&gt; () in static (extension in KcSwiftKVOManager):Swift.Mirror.(kc_classPropertyListThroughClassInfo in _4181F50B18195D28831222678D05D820)(contentValue: Any) -&gt; Swift.Array&lt;KcSwiftKVOManager.Property.Description&gt;"
+                  moduleName = "KcSwiftKVOManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangjie/Desktop/GitHub/KcSwiftKVOManager/KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+                  timestampString = "581237393.277066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "251"
+                  endingLineNumber = "251"
+                  offsetFromSymbolStart = "2254">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (KcSwiftKVOManager.Property.Description) -&gt; Swift.Bool in closure #1 ((extension in KcSwiftKVOManager):Swift.Mirror.KcHandleContent) -&gt; () in static (extension in KcSwiftKVOManager):Swift.Mirror.(kc_classPropertyListThroughClassInfo in _4181F50B18195D28831222678D05D820)(contentValue: Any) -&gt; Swift.Array&lt;KcSwiftKVOManager.Property.Description&gt;"
+                  moduleName = "KcSwiftKVOManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangjie/Desktop/GitHub/KcSwiftKVOManager/KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+                  timestampString = "581237393.280686"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "251"
+                  endingLineNumber = "251"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

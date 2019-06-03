@@ -153,7 +153,8 @@ public extension Mirror {
     }
     
     /// 获取property list
-    static func kc_classPropertyList(throughtType: KcGetPropertyListType = .classInfo, contentValue: Any) -> [Property.Description] {
+    static func kc_classPropertyList(throughtType: KcGetPropertyListType = .classInfo,
+                                     contentValue: Any) -> [Property.Description] {
         switch throughtType {
         case .classInfo:
             return kc_classPropertyListThroughClassInfo(contentValue: contentValue)
@@ -246,8 +247,14 @@ private extension Mirror {
             }
                 // 属性是元祖tuple
             else if content.mirror.mirror_filterOptionalReflectValue.displayStyle == .tuple {
-                let tuplePropertyList = kc_classPropertyList(throughtType: .mirror, contentValue: content.value)
-                propertyList.append(contentsOf: tuplePropertyList)
+//                let tuplePropertyList = kc_classPropertyList(throughtType: .mirror, contentValue: content.value)
+                if let tupleContentProperty = propertyList.first(where: { $0.keyPath == content.keyPath }) {
+                    let tuplePropertyList = kc_classPropertyListThroughMirror(reflecting: content.value, valueKeyPath: content.keyPath)
+                        // .map { Property.Description(keyPath: $0.keyPath, type: $0.type, offset: $0.offset + tupleContentProperty.offset) }
+                    // 要把tuple的整体content删掉
+//                    propertyList.removeAll(where: { $0.keyPath == tupleContentProperty.keyPath })
+                    propertyList.append(contentsOf: tuplePropertyList)
+                }
             }
         }
         return propertyList

@@ -139,6 +139,9 @@ private extension KcSwiftKVOManager {
 //                let bridgedPropertyList = Mirror.bridgedPropertyList(value: content)
                 let key = keyPath.lazy.split(separator: ".")[index...].joined(separator: ".")
                 // 7.系统定义的NSObject子类是否有这个属性(由于是用keyPath不好验证)
+//                if propertyList.contains(where: { $0.keyPath == keyPath }) {
+//                    
+//                }
                 if let objc = content as? NSObject {
                     objcClosure(objc, String(key))
                 }

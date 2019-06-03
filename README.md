@@ -43,6 +43,28 @@ let kvo = KcSwiftKVOManager.objc(viewController)
 kvo.setValue(value: UIColor.lightGray, forKeyPath: "view.backgroundColor")
 ```
 
+```swift
+元祖demo
+
+struct Test1 {
+    var i1: String?
+    var i2: Int?
+    var i3: (String, Int?) = ("i3", 3)
+    var i4: (a: String, b: Int?) = (a: "i4", b: 4)
+}
+
+var a = Test1()
+var kvo = KcSwiftKVOManager.value(&a)
+
+kvo.setValue(throughtType: .mirror, value: "i13", forKeyPath: "i3.0")
+kvo.setValue(throughtType: .mirror, value: 100, forKeyPath: "i3.1")
+kvo.setValue(throughtType: .mirror, value: ("i13", 100), forKeyPath: "i3")
+
+kvo.setValue(throughtType: .mirror, value: "i14", forKeyPath: "i4.a")
+kvo.setValue(throughtType: .mirror, value: 113, forKeyPath: "i4.b")
+
+```
+
 ## 原理
 ```
  1.属性
