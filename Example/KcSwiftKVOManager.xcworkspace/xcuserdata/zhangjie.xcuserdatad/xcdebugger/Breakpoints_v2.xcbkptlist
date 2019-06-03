@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KcSwiftKVOManager/ViewController.swift"
+            timestampString = "581235900.788076"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "test2()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/KcSwiftKVO.swift"
+            timestampString = "581235900.788386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "setValue(throughtType:handleAbnormal:value:forKeyPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581235900.788951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "kc_classPropertyList(valueKeyPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581235900.7891541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "290"
+            endingLineNumber = "290"
+            landmarkName = "_kc_classPropertyList(instanceStartOffset:valueKeyPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581235900.789211"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "superclassMirrorHandle(handleSystemObjcClass:handleSwiftClass:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581235900.7892621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
+            landmarkName = "_kc_classPropertyList(instanceStartOffset:valueKeyPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581235900.789313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "336"
+            endingLineNumber = "336"
+            landmarkName = "_kc_classPropertyListHandle(startKey:enableHandleObjcSystemClass:isHandleSuperClass:contentMirror:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in KcSwiftKVOManager):Swift.Mirror.(_kc_classPropertyListHandle in _4181F50B18195D28831222678D05D820)(startKey: Swift.String, enableHandleObjcSystemClass: Swift.Bool, isHandleSuperClass: Swift.Bool, contentMirror: Swift.Mirror) -&gt; Swift.Array&lt;(extension in KcSwiftKVOManager):Swift.Mirror.KcHandleContent&gt;"
+                  moduleName = "KcSwiftKVOManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangjie/Desktop/GitHub/KcSwiftKVOManager/KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+                  timestampString = "581219258.329757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "336"
+                  endingLineNumber = "336"
+                  offsetFromSymbolStart = "838">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Mirror, Swift.AnyObject.Type) -&gt; () in (extension in KcSwiftKVOManager):Swift.Mirror.(_kc_classPropertyListHandle in _4181F50B18195D28831222678D05D820)(startKey: Swift.String, enableHandleObjcSystemClass: Swift.Bool, isHandleSuperClass: Swift.Bool, contentMirror: Swift.Mirror) -&gt; Swift.Array&lt;(extension in KcSwiftKVOManager):Swift.Mirror.KcHandleContent&gt;"
+                  moduleName = "KcSwiftKVOManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangjie/Desktop/GitHub/KcSwiftKVOManager/KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+                  timestampString = "581219258.3315049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "337"
+                  endingLineNumber = "337"
+                  offsetFromSymbolStart = "86">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581235900.7893569"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "337"
+            endingLineNumber = "337"
+            landmarkName = "_kc_classPropertyListHandle(startKey:enableHandleObjcSystemClass:isHandleSuperClass:contentMirror:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581235900.789403"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "342"
+            endingLineNumber = "342"
+            landmarkName = "_kc_classPropertyListHandle(startKey:enableHandleObjcSystemClass:isHandleSuperClass:contentMirror:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+            timestampString = "581235900.7894469"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "kc_classPropertyListThroughClassInfo(contentValue:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static (extension in KcSwiftKVOManager):Swift.Mirror.(kc_classPropertyListThroughClassInfo in _4181F50B18195D28831222678D05D820)(contentValue: Any) -&gt; Swift.Array&lt;KcSwiftKVOManager.Property.Description&gt;"
+                  moduleName = "KcSwiftKVOManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangjie/Desktop/GitHub/KcSwiftKVOManager/KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+                  timestampString = "581219228.557006"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "415">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((extension in KcSwiftKVOManager):Swift.Mirror.KcHandleContent) -&gt; () in static (extension in KcSwiftKVOManager):Swift.Mirror.(kc_classPropertyListThroughClassInfo in _4181F50B18195D28831222678D05D820)(contentValue: Any) -&gt; Swift.Array&lt;KcSwiftKVOManager.Property.Description&gt;"
+                  moduleName = "KcSwiftKVOManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangjie/Desktop/GitHub/KcSwiftKVOManager/KcSwiftKVOManager/Classes/Mirror-analyz.swift"
+                  timestampString = "581219228.559617"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KcSwiftKVOManager/ViewController.swift"
+            timestampString = "581235900.7894911"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "test1()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KcSwiftKVOManager/TwoViewController.swift"
+            timestampString = "581235900.789534"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "test1()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

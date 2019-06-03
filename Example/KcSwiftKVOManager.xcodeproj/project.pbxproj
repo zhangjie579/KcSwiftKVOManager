@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F3419D822A26AE500F85BBB /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3419D722A26AE500F85BBB /* TwoViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		1ED24BF4BC9BDECA4901D3EB /* Pods_KcSwiftKVOManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KcSwiftKVOManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3419D722A26AE500F85BBB /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		383C656C7E3C006C92D6F482 /* Pods-KcSwiftKVOManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KcSwiftKVOManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KcSwiftKVOManager_Tests/Pods-KcSwiftKVOManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		53CFBF353156E6D831D58F0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KcSwiftKVOManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KcSwiftKVOManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				2F3419D722A26AE500F85BBB /* TwoViewController.swift */,
 			);
 			name = "Example for KcSwiftKVOManager";
 			path = KcSwiftKVOManager;
@@ -336,6 +339,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2F3419D822A26AE500F85BBB /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

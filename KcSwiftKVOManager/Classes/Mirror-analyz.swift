@@ -186,7 +186,7 @@ public extension Mirror {
     /// - Parameters:
     ///   - handleObjcClass: superclass是NSObject; Bool: 是否为系统的class、false为自定义的class
     ///   - handleSwiftClass: superclass是自定义的swift class
-    func superclassMirrorHandle(handleObjcClass: (Mirror, AnyClass, Bool) -> Void,
+    func superclassMirrorHandle(handleSystemObjcClass: (Mirror, AnyClass) -> Void,
                                 handleSwiftClass: (Mirror, Any.Type) -> Void) {
         if let superclassMirror = superclassMirror {
             /* 2.不处理objc系统的class
@@ -194,9 +194,11 @@ public extension Mirror {
              * kc_isNSObjectSubClass: 是NSObject的子类,
              * !kc_isCustomClass: 不是自定义方法 - 是objc系统的class
              */
+            // super是NSObject的子类, 并且是系统的class
             if let anyClass = superclassMirror.subjectType as? AnyClass,
-                Mirror.kc_isNSObjectSubClass(classType: superclassMirror.subjectType) {
-                handleObjcClass(superclassMirror, anyClass, !Mirror.kc_isCustomClass(for: anyClass))
+                Mirror.kc_isNSObjectSubClass(classType: superclassMirror.subjectType),
+                !Mirror.kc_isCustomClass(for: anyClass) {
+                handleSystemObjcClass(superclassMirror, anyClass)
             }
             else if String(describing: superclassMirror.subjectType) != "SwiftObject" {
                 handleSwiftClass(superclassMirror, superclassMirror.subjectType)
@@ -216,74 +218,38 @@ public extension Mirror {
         public let isEnd: Bool
     }
     
-    /// 遍历property
     func kc_classPropertyListHandle(startKey: String = "",
                                     enableHandleObjcSystemClass: Bool = false,
-                                    reflecting: Any,
-                                    handldSelf: @escaping ((KcHandleContent) -> Void)) {
-        func keyPath(startKey: String, key: String) -> String {
-            return startKey == "" ? key : startKey + "." + key
-        }
-        
-        // 0.value为optional
-        if isOptionalValue {
-            for (key, value) in children where key == "some" {
-                let mirror = Mirror(reflecting: value)
-                mirror.kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, reflecting: value, handldSelf: handldSelf)
-            }
-        }
-        
-        // 1.superMirror
-        superclassMirrorHandle(handleObjcClass: { (superclassMirror, anyClass, isSystemClass) in
-            if isSystemClass {
-                if enableHandleObjcSystemClass {
-                    superclassMirror.kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, reflecting: reflecting, handldSelf: handldSelf)
-                }
-            } else {
-                superclassMirror.kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, reflecting: reflecting, handldSelf: handldSelf)
-            }
-        }) { (superclassMirror, type) in
-            superclassMirror.kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, reflecting: reflecting, handldSelf: handldSelf)
-        }
-        
-        // 2.到这说明没有super了
-        for (index, element) in children.enumerated() {
-            guard let key = element.label, key != "some", key != "" else { continue }
-            let value = element.value
-            let name = keyPath(startKey: startKey, key: key)
-            let childMirror = Mirror(reflecting: value)
-            
-            // 3.不管有没有child、super都先处理自己
-            handldSelf(KcHandleContent.init(keyPath: name, value: value, contentMirror: self, mirror: childMirror, isBegin: index == 0, isEnd: index == children.count - 1))
-            
-            // 4.处理superclassMirror、children
-            if childMirror.superclassMirror != nil || !childMirror.children.isEmpty {
-                childMirror.kc_classPropertyListHandle(startKey: name, enableHandleObjcSystemClass: enableHandleObjcSystemClass, reflecting: reflecting, handldSelf: handldSelf)
-            }
-        }
+                                    isHandleSuperClass: Bool = false) -> [KcHandleContent] {
+        let mirror = mirror_filterOptionalReflectValue
+        return mirror._kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: isHandleSuperClass, contentMirror: mirror)
     }
 }
 
 private extension Mirror {
+    
     /// 获取contentValue的property list - 通过class info
     static func kc_classPropertyListThroughClassInfo(contentValue: Any) -> [Property.Description] {
-        /// 把key转换成keyPath
-        func propertyKeyPath(prefix: String, key: String) -> String {
-            return prefix == "" ? key : prefix + "." + key
-        }
-        
         var propertyList = [Property.Description]()
         let mirror = Mirror(reflecting: contentValue)
         // 前缀
         var keyPrefix = ""
-        mirror.kc_classPropertyListHandle(reflecting: contentValue, handldSelf: { content in
+//        mirror.mirror_filterOptionalReflectValue
+        let handleArrays = mirror.kc_classPropertyListHandle()
+        handleArrays.forEach { content in
+            // 由于Metadata.getProperties得到的是这个type下面的所有属性，so只需要传入这个type的第1个属性即可
             if content.isBegin, let properties = Metadata.getProperties(forType: content.contentMirror.subjectType), !properties.isEmpty {
                 if let index = content.keyPath.lastIndex(of: ".") {
                     keyPrefix = String(content.keyPath[..<index])
                 }
                 propertyList.append(contentsOf: properties.lazy.map { Property.Description(keyPath: propertyKeyPath(prefix: keyPrefix, key: $0.keyPath), type: $0.type, offset: $0.offset) })
             }
-        })
+                // 属性是元祖tuple
+            else if content.mirror.mirror_filterOptionalReflectValue.displayStyle == .tuple {
+                let tuplePropertyList = kc_classPropertyList(throughtType: .mirror, contentValue: content.value)
+                propertyList.append(contentsOf: tuplePropertyList)
+            }
+        }
         return propertyList
     }
     
@@ -313,17 +279,15 @@ private extension Mirror {
             return layout.size
         }
         
-        func keyPath(startKey: String, key: String) -> String {
-            return startKey == "" ? key : startKey + "." + key
-        }
+//        func keyPath(startKey: String, key: String) -> String {
+//            return startKey == "" ? key : startKey + "." + key
+//        }
         
         var propertyList = [Property.Description]()
         
         // 1.有super
-        superclassMirrorHandle(handleObjcClass: { (superMirror, anyClass, isSystemClass) in
-            if !isSystemClass {
-                instanceStartOffset = class_getInstanceSize(anyClass)
-            }
+        superclassMirrorHandle(handleSystemObjcClass: { (superMirror, anyClass) in
+            instanceStartOffset = class_getInstanceSize(anyClass)
         }) { (superclassMirror, type) in
             let superProperties = superclassMirror._kc_classPropertyList(instanceStartOffset: &instanceStartOffset, valueKeyPath: valueKeyPath)
             if !superProperties.isEmpty {
@@ -334,7 +298,8 @@ private extension Mirror {
         // 2.child
         for (key, value) in children {
             guard let key = key, key != "some", key != "" else { continue }
-            let name = keyPath(startKey: valueKeyPath, key: key)
+            let name = Mirror.propertyKeyPath(prefix: valueKeyPath, key: key)
+//            let name = keyPath(startKey: valueKeyPath, key: key)
             let childMirror = Mirror(reflecting: value)
             // 3.instanceStartOffset内存对齐，并返回value的size
             let valueSize = memoryLayoutAlignmentAndValueSize(with: value, currentOffset: &instanceStartOffset)
@@ -354,6 +319,74 @@ private extension Mirror {
             }
         }
         return propertyList
+    }
+    
+    /// 遍历property (有属性返回true), isAlreadyAddPropertyInValue这个对象没有属性
+    private func _kc_classPropertyListHandle(startKey: String = "",
+                                             enableHandleObjcSystemClass: Bool = false,
+                                             isHandleSuperClass: Bool = false,
+                                             contentMirror: Mirror) -> [KcHandleContent] {
+        func keyPath(startKey: String, key: String) -> String {
+            return startKey == "" ? key : startKey + "." + key
+        }
+        
+        var results = [KcHandleContent]()
+        
+        // 1.superMirror
+        superclassMirrorHandle(handleSystemObjcClass: { (superclassMirror, anyClass) in
+            if enableHandleObjcSystemClass {
+                let superResults = superclassMirror._kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: true, contentMirror: contentMirror)
+                results.append(contentsOf: superResults)
+            }
+        }) { (superclassMirror, type) in
+            let superResults = superclassMirror._kc_classPropertyListHandle(startKey: startKey, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: true, contentMirror: contentMirror)
+            results.append(contentsOf: superResults)
+        }
+        
+        /// 处理property list
+        ///
+        /// - Parameters:
+        ///   - isHandleSuperClass: 是否是处理super的property list, false的话是处理自己的
+        func handelPropertyList(isHandleSuperClass: Bool) {
+            // 2.到这说明没有super了
+            for (index, element) in children.enumerated() {
+                guard let key = element.label, key != "some", key != "" else { continue }
+                let value = element.value
+                let name = keyPath(startKey: startKey, key: key)
+                let childMirror = Mirror(reflecting: value)
+                
+                // 3.不管有没有child、super都先处理自己
+                let isEnd = isHandleSuperClass ? false : index == children.count - 1
+                let isBegin: Bool
+                // 判断同一个对象的族簇有没有添加过property
+                if !results.isEmpty || superclassMirror?.children.isEmpty == false { // 已经添加过了 || super的children不为空
+                    isBegin = false
+                } else {
+                    isBegin = index == 0 ? true : false
+                }
+                
+                let handleContent = KcHandleContent.init(keyPath: name, value: value, contentMirror: contentMirror, mirror: childMirror, isBegin: isBegin, isEnd: isEnd)
+                print("key: \(handleContent.keyPath), isBegin: \(handleContent.isBegin), isEnd: \(handleContent.isEnd),  self: \(self), content: \(contentMirror)")
+                results.append(handleContent)
+                
+                // 4.处理superclassMirror、children
+                if childMirror.superclassMirror != nil || !childMirror.children.isEmpty {
+                    let childResults = childMirror.kc_classPropertyListHandle(startKey: name, enableHandleObjcSystemClass: enableHandleObjcSystemClass, isHandleSuperClass: false)
+                    //                print("childmirror: \(childMirror), childResults: \(childResults.count)")
+                    results.append(contentsOf: childResults)
+                }
+            }
+        }
+        handelPropertyList(isHandleSuperClass: isHandleSuperClass)
+        // 2.到这说明处理好了super了的
+        return results
+    }
+    
+    /// 把key转换成keyPath
+    static func propertyKeyPath(prefix: String, key: String) -> String {
+        // 当key是tuple(元祖)的时候key为.0、.name, 后面加了., so需要去掉
+        let key = key.replacingOccurrences(of: ".", with: "")
+        return prefix == "" ? key : prefix + "." + key
     }
 }
 

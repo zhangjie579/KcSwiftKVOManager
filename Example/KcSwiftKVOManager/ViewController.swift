@@ -16,13 +16,17 @@ class ViewController: UIViewController {
         
         test1()
         
+        var a: (String?, Int, Int) = ("kc", 1, 1)
+        let list = Mirror.kc_classPropertyList(throughtType: .classInfo, contentValue: a)
+        print(list)
+        print("-------")
     }
     
     /// 通过mirror kvo
     func test1() {
         var a = KcThree1()
         var kvo = KcSwiftKVOManager.value(&a)
-        
+        kvo.setValue(throughtType: .mirror, value: "t1.i1", forKeyPath: "t1.i1")
         let dict = ["s1": "s1",
                     "t1.i1": "t1.i1",
                     "t1.i2": "t1.i2",
@@ -30,7 +34,7 @@ class ViewController: UIViewController {
                     "t1.i4": 4,
                     "t1.i5": 5,
                     "t1.tag": 1001,
-                    "t4.view": 1,
+                    // "t4.view": 1,
                     "s2": 23,
                     "t2.i1": "t2.i1",
                     "t2.i2": "t2.i2",
@@ -97,11 +101,12 @@ class ViewController: UIViewController {
         
         
         var propertyList = [Property.Description]()
-        mirror.kc_classPropertyListHandle(reflecting: a, handldSelf: { content in
+        let results = mirror.kc_classPropertyListHandle()
+        results.forEach {  content in
             if content.isBegin, let properties = Metadata.getProperties(forType: content.contentMirror.subjectType) {
                 propertyList.append(contentsOf: properties)
             }
-        })
+        }
         
         propertyList.forEach {
             print("key: \($0.keyPath), offset:\($0.offset), type: \($0.type)")

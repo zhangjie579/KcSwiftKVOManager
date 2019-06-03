@@ -47,8 +47,11 @@ private extension KcSwiftKVOManager {
                    forKeyPath keyPath: String,
                    propertyList: [Property.Description],
                    handleAbnormal: KcSwiftKVOHandleAbnormalable = KcSwiftKVOHandelAbnormalDefault()) {
-        let contentValue = self.value
-        handleKeyPathForKVO(contentValue: contentValue, keyPath: keyPath, propertyList: propertyList, nextClosure: { (property, pointer, content) in
+        /* 本来想判断传入的value与propertyList对应keypath的property的type是否相等
+         如果value: [1], 而type为[int?]?这是对的, but不容易判断，so不处理
+         */
+        
+        handleKeyPathForKVO(contentValue: self.value, keyPath: keyPath, propertyList: propertyList, nextClosure: { (property, pointer, content) in
             content = pointer.kc_value(forKey: property.keyPath, type: property.type, offset: property.offset)
             pointer = nextPorpertyPointer(with: pointer, offset: property.offset, isClassOfCurrentProperty: Mirror.kc_isClass(type: property.type))
         }, finishClosure: { (property, pointer) in
@@ -93,12 +96,12 @@ private extension KcSwiftKVOManager {
     ///   - objcClosure: objc的kvo处理
     ///   - notFoundClosure: 没有找到的处理 String: keyPath, String: 找不到的key, Any: 找不到key属性的对象
     func handleKeyPathForKVO(contentValue: Any,
-                                      keyPath: String,
-                                      propertyList: [Property.Description],
-                                      nextClosure: (Property.Description, inout UnsafeMutableRawPointer, inout Any) -> Void,
-                                      finishClosure: (Property.Description, UnsafeMutableRawPointer) -> Void,
-                                      objcClosure: (NSObject, String) -> Void,
-                                      notFoundClosure: (String, String, Any) -> Void) {
+                             keyPath: String,
+                             propertyList: [Property.Description],
+                             nextClosure: (Property.Description, inout UnsafeMutableRawPointer, inout Any) -> Void,
+                             finishClosure: (Property.Description, UnsafeMutableRawPointer) -> Void,
+                             objcClosure: (NSObject, String) -> Void,
+                             notFoundClosure: (String, String, Any) -> Void) {
         /// 包括key、_key
         func isContain(set: Set<String>, key: String) -> Bool {
             if set.contains(key) {
@@ -159,14 +162,16 @@ private extension KcSwiftKVOManager {
         let mirror = Mirror(reflecting: contentValue)
         // 前缀
         var keyPrefix = ""
-        mirror.kc_classPropertyListHandle(reflecting: contentValue, handldSelf: { content in
+        let handleResults = mirror.kc_classPropertyListHandle()
+        handleResults.forEach { content in
             if content.isBegin, let properties = Metadata.getProperties(forType: content.contentMirror.subjectType), !properties.isEmpty {
                 if let index = content.keyPath.lastIndex(of: ".") {
                     keyPrefix = String(content.keyPath[..<index])
                 }
                 propertyList.append(contentsOf: properties.lazy.map { Property.Description(keyPath: propertyKeyPath(prefix: keyPrefix, key: $0.keyPath), type: $0.type, offset: $0.offset) })
             }
-        })
+            
+        }
         return propertyList
     }
 }

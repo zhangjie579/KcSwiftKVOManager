@@ -48,46 +48,36 @@ public extension String {
         let projectName = Bundle.kc_bundleName() ?? ""
         return NSClassFromString(projectName + "." + self)
     }
-    
-    /// value的类型 [Array, Optional, String]
-    static func kc_classTypeToArray(value: Any) -> [String] {
-        let typeString = "\(type(of: value))"
-        // 1.没有>, 说明是单类型，既不是optional, 也不是[], [:]
-        guard let firstIndex = typeString.firstIndex(of: ">") else {
-            return [typeString]
+}
+
+public extension Collection {
+    /// 第几个满足predicate的索引
+    func kc_index(where predicate: (Element) throws -> Bool, generations: Int) rethrows -> Index? {
+        var count = 0
+        var index = startIndex
+        while index < endIndex {
+            if try predicate(self[index]) {
+                count += 1
+                if generations == count {
+                    return index
+                }
+            }
+            formIndex(after: &index)
         }
-        // 2.Optional<Array<Optional<String>>>, 只截取到>的前一个, 然后通过<, 把它们分隔开  [Optional, Array, Optional, String]
-        let arrayString = String(typeString[typeString.startIndex..<firstIndex])
-            .split(separator: "<").map(String.init)
-        return arrayString
+        return nil
     }
     
-    /// [String?]?
-    /// String, Optional<String>, Array<Optional<String>>, Optional<Array<Optional<String>>>
-    /// 用空格替换< >, 然后分成数组, optional用?替代
-    static func kc_classType(value: Any) -> String {
-        let typeString = "\(type(of: value))"
-        // 1.没有>, 说明是单类型，既不是optional, 也不是[], [:]
-        guard typeString.firstIndex(of: ">") != nil else {
-            return typeString
+    /// 满足这个条件predicate的Character有多少个
+    func kc_count(where predicate: (Element) throws -> Bool) rethrows -> Int? {
+        var count = 0
+        var index = startIndex
+        while index < endIndex {
+            if try predicate(self[index]) {
+                count += 1
+            }
+            formIndex(after: &index)
         }
-        // 2.Optional<Array<Optional<String>>>, 只截取到>的前一个, 然后通过<, 把它们分隔开  [Optional, Array, Optional, String]
-        let arrayString = String.kc_classTypeToArray(value: value)
-        //        var typeResult = "?[]"
-        var typeResult = ""
-        // 3.从后开始遍历，一层一层处理, 因为最后一层是最里面的type
-        for string in arrayString.reversed() {
-            if string == "Optional" {
-                typeResult = typeResult + "?"
-            }
-            else if string == "Array" {
-                typeResult = "[" + typeResult + "]"
-            }
-            else {
-                typeResult += string
-            }
-        }
-        return typeResult
+        return count
     }
 }
 
