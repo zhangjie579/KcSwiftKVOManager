@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'KcSwiftKVOManager/Classes/**/*'
   
+  s.swift_version = '4.2'
   # s.resource_bundles = {
   #   'KcSwiftKVOManager' => ['KcSwiftKVOManager/Assets/*.png']
   # }
